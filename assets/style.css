@@ -20,7 +20,7 @@
     font-size: 16px;
   }
 
-  .hero {
+  .jumbotron {
       background-color: whitesmoke;
       text-align: center;
       width: 100%;
@@ -110,7 +110,6 @@ p {
   box-shadow: 2px 2px var(--dark);
 }
 
-
 .app-title {
   font-size: 3rem;
   background-color: var(--primary);
@@ -166,6 +165,10 @@ p {
   background-color: var(--dark);
   padding: 2.%;
   border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
+}
+
+.card-holder {
+    display: inline-block;
 }
 
 /* FORM */
