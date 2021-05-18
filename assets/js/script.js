@@ -1,31 +1,22 @@
-:root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: #38302e;
-    --border-radius: .3rem;
-  }
-* {
-    box-sizing: border-box;
-}
 
-  body {
-    background-color: var(--primary);
-    margin: 0;
-    padding: 0;
-    font-family: "IBM Plex Sans", sans-serif;
-    color: var(--dark);
-    line-height: 1.5;
-    font-size: 16px;
-  }
 
-.header-title {
-    font-size: 3rem;
-    background-color: var(--primary);
-    color: var(--dark);
-    padding: 0 10px;
-    display: inline-block;
-    border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-dark);
-  }
+
+
+
+// var apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid=62583e888bf8baa39955e0f709e07981";
+// fetch(apiUrl).then(response => {
+//     return response.JSON();
+// }) .then(data => {
+//     console.log(data);
+// }) .catch(err => {
+//     // do something for an error here
+// });
+
+
+
+
+
+
+// id="city-name" from html probably
+// localStorage.setItem("city", city-name);
+// localStorage.getItem("city")
