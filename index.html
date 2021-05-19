@@ -11,99 +11,48 @@
 </head>
 <body>
     <header class="jumbotron">
-    <div class="page-header 50%"><i class="fas fa-cloud-sun"></i>Weather Dashboard</h1>
+    <div class="page-header 50%">
+      <i class="fas fa-cloud-sun">
+      </i>Weather Dashboard</h1>
+    </div>
 </header>
 
-<main class="flex-row justify-space-between">
-    
-    <div class="col-12 col-md-4">
-        <div class="card">
-          <h3 class="card-header text-uppercase">Search By City</h3>
-          <form id="city-form" class="card-body">
-            <label class="form-label" for="cityname">City:</label>
-            <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input" />
-            <button type="submit" class="btn">Get Weather</button>
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+          <form>
+              <h3>Search for a City:</h3>
+              <div class="input-group">
+                  <input type="text" class="form-control" id="cityInput" placeholder="Enter City">
+                  <div class="input-group-append">
+                      <button type="submit" id="submitCity" class="btn fas fa-search">Search</button>
+                  </div>
+              </div>
           </form>
-        </div>
-    
-        <div class="card">
-            <h3 class="card header text-uppercase">Previous Cities Searched</h3>
-            <div class="card-body" id="city-buttons">
-              <button class="btn" data-language="cityname">City</button><br>
-              <button class="btn" data-language="cityname">City</button><br>
-              <button class="btn" data-language="cityname">City</button><br>
-              <button class="btn" data-language="cityname">City</button><br>
-              <button class="btn" data-language="cityname">City</button><br>
-              <button class="btn" data-language="cityname">City</button><br>
-              <button class="btn" data-language="cityname">City</button><br>
-          </div>
-        </div>
-      </div>
-    
-    
-      <div class="col-8 col-md-8">
-        <h2 class="subtitle">Current Forecast: <span id="city-search-term"></span></h2>
-        <div id="city-container" class="list-group"></div>
-            <div class="card">
-                <h3 class="card-header text-uppercase">Current City</h3>
-                <h4>Temp:</h4>
-                <h4>Wind:</h4>
-                <h4>Humdity:</h4>
-            </div>
-            <br>
-        <container>
-            <div class="row ">
-                <div class="col-lg-2">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">City</h5>
-                      <p class="card-text">City info goes here.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">City</h5>
-                      <p class="card-text">City info goes here.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">City</h5>
-                        <p class="card-text">City info goes here.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">City</h5>
-                        <p class="card-text">City info goes here.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-2">
-                    <div class="card">
-                      <div class="card-body">
-                        <h5 class="card-title">City</h5>
-                        <p class="card-text">City info goes here.</p>
-                      </div>
-                    </div>
-                  </div>
 
+          <div id="previousSearch" class="btn-group-vertical">
+
+          </div>
+
+      </div>
+      
+      <div class="col-md-2">
+          <div id="currentWeather">
+            <div id="currentCity"></div>
+        
+          </div>
+
+              <h3>5-Day Forecast:</h3>
+              <br>
+              <div class="row" id="weatherForecast">
+              </div>
 
               </div>
-                  
-        </container>
-    </div>
-      
-</main>
-
-
-
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

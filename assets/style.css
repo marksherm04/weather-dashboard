@@ -72,7 +72,7 @@ p {
   border: none;
   outline: none;
   background-color: var(--light-dark);
-  box-shadow: 3px 3px var(--dark);
+  box-shadow: 3px 3px var(--ter);
   transform: translate(-1px, -1px);
 }
 
@@ -87,27 +87,9 @@ p {
   display: inline;
 }
 
-.btn-back {
-  border-radius: var(--border-radius);
-  color: var(--primary);
-  border: none;
-  outline: none;
-  background-color: var(--light-dark);
-  box-shadow: 3px 3px var(--secondary);
-  transform: translate(-1px, -1px);
+.btn-group {
+  width: 100%;
   display: inline-block;
-  width: auto;
-  margin-top: 20px;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
- .btn-back:hover {
-  color: var(--primary);
-  background-color: var(--tertiary);
-  transform: translate(0, 0);
-  box-shadow: 2px 2px var(--dark);
 }
 
 .app-title {
@@ -163,7 +145,7 @@ p {
 .card-header {
   color: var(--primary);
   background-color: var(--dark);
-  padding: 2.%;
+  padding: 2%;
   border-radius: calc(.18rem - 1px) calc(.18rem - 1px) 0 0;
 }
 
