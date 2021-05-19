@@ -84,12 +84,13 @@ p {
 }
 
 .btn-inline {
-  display: inline;
+  display: inline-block;
 }
 
-.btn-group {
+.btn-group-vertical {
   width: 100%;
   display: inline-block;
+
 }
 
 .app-title {
@@ -174,6 +175,10 @@ p {
   border-radius: var(--border-radius);
 }
 
+#weatherForecast {
+  display:inline-flex;
+  
+}
 
 /* CARDS */
 .card {
